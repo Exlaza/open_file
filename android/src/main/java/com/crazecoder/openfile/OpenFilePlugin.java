@@ -295,6 +295,16 @@ public class OpenFilePlugin implements MethodCallHandler
                 return "application/x-compress";
             case "zip":
                 return "application/x-zip-compressed";
+            case "cbr":
+                return "application/vnd.comicbook-rar";
+            case "cbz":
+                return "application/vnd.comicbook+zip";
+            case "epub":
+                return "application/epub+zip";
+            case "mobi":
+                return "application/x-mobipocket-ebook";
+            case "azw3":
+                return "application/vnd.amazon.mobi8-ebook";
             default:
                 return "*/*";
         }
